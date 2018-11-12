@@ -22,6 +22,7 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
+  
 
   config.actions do
     dashboard                     # mandatory
@@ -38,4 +39,16 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+  
+  config.model 'Aluguel' do
+    list do
+
+      field :preco
+      field :status
+      field :data_retirada
+      field :data_devolucao
+    end
+  end
 end
+
+
